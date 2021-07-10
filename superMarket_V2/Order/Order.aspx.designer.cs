@@ -49,13 +49,13 @@ namespace superMarket_V2.Order {
         protected global::System.Web.UI.WebControls.TextBox txtcustomerProductOrderQuantity;
         
         /// <summary>
-        /// Button1 control.
+        /// btnOrder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnOrder;
         
         /// <summary>
         /// txtCustomerProductOrderId control.

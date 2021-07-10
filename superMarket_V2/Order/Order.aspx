@@ -17,7 +17,7 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 117px; height: 22px"><strong>Prouct </strong><b>C</b><span style="font-weight: bold">atagory</span></td>
+            <td style="width: 117px; height: 22px; color: #5A1035;"><strong>Prouct </strong><b>C</b><span style="font-weight: bold">atagory</span></td>
             <td style="height: 22px">
                 <asp:DropDownList ID="ddlProductId" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProductId_SelectedIndexChanged">
                 </asp:DropDownList>
@@ -29,7 +29,7 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 117px"><strong>Prouct Name</strong></td>
+            <td style="width: 117px; color: #5A1035;"><strong>Prouct Name</strong></td>
             <td>
                 <asp:DropDownList ID="ddlProductCategoriesId" runat="server">
                 </asp:DropDownList>
@@ -41,7 +41,7 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 117px"><strong>Quantity</strong></td>
+            <td style="width: 117px; color: #5A1035;"><strong>Quantity</strong></td>
             <td>
                 <asp:TextBox ID="txtcustomerProductOrderQuantity" runat="server"></asp:TextBox>
             </td>
@@ -53,7 +53,7 @@
         <tr>
             <td style="width: 117px">&nbsp;</td>
             <td>
-                <asp:Button ID="Button1" runat="server" Text="Order" OnClick="Button1_Click" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865"/>
+                <asp:Button ID="btnOrder" runat="server" Text="Order" OnClick="btnOrder_Click" Font-Bold="True" Font-Names="Calibri" BorderColor="#E46CA8" style="color: #FFFFFF; background-color: #EE9FC7"/>
             </td>
         </tr>
         <tr>
@@ -65,7 +65,7 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 117px">
+            <td style="width: 117px; color: #5A1035;">
                 <strong>Product Order ID</strong></td>
             <td>
                 <asp:TextBox ID="txtCustomerProductOrderId" runat="server"></asp:TextBox>
@@ -81,8 +81,8 @@
             <td style="width: 117px">
                 &nbsp;</td>
             <td>
-                <asp:Button ID="btnUpdateOrder" runat="server" Text="Update Order" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865" OnClick="btnUpdateOrder_Click" />
-                <asp:Button ID="btnDeleteOrder" runat="server" Text="Delete Order" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865" OnClick="btnDeleteOrder_Click"/>
+                <asp:Button ID="btnUpdateOrder" runat="server" Text="Update Order" Font-Bold="True" Font-Names="Calibri" BorderColor="#E46CA8" style="color: #FFFFFF; background-color: #EE9FC7" OnClick="btnUpdateOrder_Click" />
+                <asp:Button ID="btnDeleteOrder" runat="server" Text="Delete Order" Font-Bold="True" Font-Names="Calibri" BorderColor="#E46CA8" style="color: #FFFFFF; background-color: #EE9FC7" OnClick="btnDeleteOrder_Click"/>
             </td>
         </tr>
         <tr>
@@ -92,8 +92,8 @@
         <tr>
             <td style="width: 117px; height: 20px">&nbsp;</td>
             <td style="height: 20px">
-                <asp:Button ID="btnReceipt" runat="server" Text="My Receipts" OnClick="btnReceipt_Click" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865"/>
-                <asp:Button ID="btnExportPDF" runat="server" Text="Download Receipt as PDF" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865" OnClick="btnExportPDF_Click"/>
+                <asp:Button ID="btnReceipt" runat="server" Text="My Receipts" OnClick="btnReceipt_Click" Font-Bold="True" Font-Names="Calibri" BorderColor="#E46CA8" style="color: #FFFFFF; background-color: #EE9FC7"/>
+                <asp:Button ID="btnExportPDF" runat="server" Text="Download Receipt as PDF" Font-Bold="True" Font-Names="Calibri" BorderColor="#E46CA8" style="color: #FFFFFF; background-color: #EE9FC7" OnClick="btnExportPDF_Click"/>
             </td>
         </tr>
         <tr>

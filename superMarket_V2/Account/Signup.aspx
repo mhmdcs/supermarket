@@ -4,20 +4,20 @@
     <br />  
 
     <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
-             <CreateUserButtonStyle  Font-Bold="True" Font-Names="Calibri" BackColor="#D8B865" BorderColor="#B9932F" ForeColor="White" />
+             <CreateUserButtonStyle  Font-Bold="True" Font-Names="Calibri" BackColor="#EE9FC7" BorderColor="#E46CA8" ForeColor="White" />
             <WizardSteps>
                 <asp:CreateUserWizardStep runat="server" >
                     <ContentTemplate>
                         <table>
                             <tr>
-                                <td align="center" colspan="2"><strong>Sign Up for Your New Account</strong></td>
+                                <td align="center" colspan="2" style="height: 20px">&nbsp;</td>
                             </tr>
                             <tr>
                                 <td align="center" colspan="2">&nbsp;</td>
                             </tr>
                             <tr>
                                 <td align="right">
-                                    <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">User Name:</asp:Label>
+                                    <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName" style="color: #5A1035">User Name:</asp:Label>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="UserName" runat="server"></asp:TextBox>
@@ -30,7 +30,7 @@
                             </tr>
                             <tr>
                                 <td align="right">
-                                    <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Password:</asp:Label>
+                                    <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password" style="color: #5A1035">Password:</asp:Label>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="Password" runat="server" TextMode="Password"></asp:TextBox>
@@ -43,7 +43,7 @@
                             </tr>
                             <tr>
                                 <td align="right">
-                                    <asp:Label ID="ConfirmPasswordLabel" runat="server" AssociatedControlID="ConfirmPassword">Confirm Password:</asp:Label>
+                                    <asp:Label ID="ConfirmPasswordLabel" runat="server" AssociatedControlID="ConfirmPassword" style="color: #5A1035">Confirm Password:</asp:Label>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="ConfirmPassword" runat="server" TextMode="Password" ></asp:TextBox>
@@ -56,7 +56,7 @@
                             </tr>
                             <tr>
                                 <td align="right">
-                                    <asp:Label ID="EmailLabel" runat="server" AssociatedControlID="Email">E-mail:</asp:Label>
+                                    <asp:Label ID="EmailLabel" runat="server" AssociatedControlID="Email" style="color: #5A1035">E-mail:</asp:Label>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="Email" runat="server" ></asp:TextBox>
@@ -69,7 +69,7 @@
                             </tr>
                             <tr>
                                 <td align="right">
-                                    <asp:Label ID="QuestionLabel" runat="server" AssociatedControlID="Question">Security Question:</asp:Label>
+                                    <asp:Label ID="QuestionLabel" runat="server" AssociatedControlID="Question" style="color: #5A1035">Security Question:</asp:Label>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="Question" runat="server" ></asp:TextBox>
@@ -82,7 +82,7 @@
                             </tr>
                             <tr>
                                 <td align="right">
-                                    <asp:Label ID="AnswerLabel" runat="server" AssociatedControlID="Answer">Security Answer:</asp:Label>
+                                    <asp:Label ID="AnswerLabel" runat="server" AssociatedControlID="Answer" style="color: #5A1035">Security Answer:</asp:Label>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="Answer" runat="server"></asp:TextBox>
@@ -115,7 +115,7 @@
                                 <br />
                                 </tr>
                                 <tr>
-                                    <td style="height: 20px"><strong>Click on Continue to insert your profile information.</strong></td>
+                                    <td style="height: 20px; color: #5A1035;"><strong>Click Continue To Insert Your Profile Information.</strong></td>
                                 </tr>
                                 <tr>
                                     <td>&nbsp;</td>
@@ -123,7 +123,7 @@
                                 <tr>
                                 <td align="right">
 
-                                        <asp:Button ID="ContinueButton" runat="server" CausesValidation="False" CommandName="Continue" OnCommand="ContinueButton_Command"  Text="Continue" ValidationGroup="CreateUserWizard"  Font-Bold="True" Font-Names="Calibri" BackColor="#D8B865" BorderColor="#B9932F" ForeColor="White" />
+                                        <asp:Button ID="ContinueButton" runat="server" CausesValidation="False" CommandName="Continue" OnCommand="ContinueButton_Command"  Text="Continue" ValidationGroup="CreateUserWizard"  Font-Bold="True" Font-Names="Calibri" BackColor="#EE9FC7" BorderColor="#E46CA8" ForeColor="White" />
 
 
                                     </td>

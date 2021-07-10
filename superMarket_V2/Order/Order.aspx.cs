@@ -95,7 +95,7 @@ namespace superMarket_V2.Order
             gvOrder.DataBind();
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnOrder_Click(object sender, EventArgs e)
         {
 
             //Code to retrieve current logged-in username and UserId to perform secured crud operations that check user integrity

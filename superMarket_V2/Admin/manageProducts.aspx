@@ -18,7 +18,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="modal-sm" style="width: 155px">
+            <td class="modal-sm" style="width: 155px; color: #5A1035;">
                 <strong>Product Name</strong></td>
             <td>
                 <asp:TextBox ID="txtProductCategories" runat="server"></asp:TextBox>
@@ -30,7 +30,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="modal-sm" style="width: 155px; height: 23px;">
+            <td class="modal-sm" style="width: 155px; height: 23px; color: #5A1035;">
                 <strong>Product Type</strong></td>
             <td style="height: 23px">
                 <asp:DropDownList ID="ddlProducTypetId" runat="server">
@@ -51,7 +51,7 @@
             <td style="height: 20px"></td>
         </tr>
         <tr>
-            <td class="modal-sm" style="width: 155px">
+            <td class="modal-sm" style="width: 155px; color: #5A1035;">
                 <strong>Product Price</strong></td>
             <td>
                 <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
@@ -63,7 +63,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="modal-sm" style="width: 155px">
+            <td class="modal-sm" style="width: 155px; color: #5A1035;">
                 <strong>Product Size</strong></td>
             <td>
                 <asp:RadioButtonList ID="rbtlSize" runat="server">
@@ -84,7 +84,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="modal-sm" style="width: 155px; height: 23px;">
+            <td class="modal-sm" style="width: 155px; height: 23px; color: #5A1035;">
                 <strong>Product Expiration Date</strong></td>
             <td style="height: 23px">
                 <asp:TextBox ID="txtExpiryDate" runat="server">01/01/1990</asp:TextBox>
@@ -96,7 +96,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="modal-sm" style="width: 155px"><strong>Upload Product Image</strong></td>
+            <td class="modal-sm" style="width: 155px; color: #5A1035;"><strong>Upload Product Image</strong></td>
             <td>
                 <asp:FileUpload ID="fileProductImage" runat="server" />
             </td>
@@ -109,7 +109,7 @@
         <tr>
             <td class="modal-sm" style="width: 155px">&nbsp;</td>
             <td>
-                <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Add" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865" />
+                <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Add" Font-Bold="True" Font-Names="Calibri" BorderColor="#E46CA8" style="color: #FFFFFF; background-color: #EE9FC7" />
             </td>
         </tr>
         <tr>
@@ -121,7 +121,7 @@
             <td class="modal-sm" style="width: 155px">Product Id</td>
             <td>
                 <asp:TextBox ID="txtProductCategoriesId" runat="server"></asp:TextBox>
-                <asp:Button ID="btnDelete" runat="server" OnClick="btnDelete_Click" Text="Delete" />
+                <asp:Button ID="btnDelete" runat="server" OnClick="btnDelete_Click" Text="Delete" Font-Bold="True" Font-Names="Calibri" BorderColor="#E46CA8" style="color: #FFFFFF; background-color: #EE9FC7"/>
             </td>
         </tr>
         <tr>
@@ -132,10 +132,10 @@
         <tr>
             <td class="modal-sm" style="width: 155px; height: 27px;"></td>
             <td style="height: 27px">
-                <asp:Button ID="btnShowProducts" runat="server" OnClick="btnShowProducts_Click" Text="Show Products" />
-                <asp:Button ID="btnExportExcel0" runat="server" OnClick="btnExportExcel_Click" Text="Export Excel" />
-                <asp:Button ID="btnExportWord0" runat="server" OnClick="btnExportWord_Click" Text="Export Word" />
-                <asp:Button ID="btnExportPDF0" runat="server" OnClick="btnExportPDF_Click" Text="Export PDF" />
+                <asp:Button ID="btnShowProducts" runat="server" OnClick="btnShowProducts_Click" Text="Show Products" Font-Bold="True" Font-Names="Calibri" BorderColor="#E46CA8" style="color: #FFFFFF; background-color: #EE9FC7"/>
+                <asp:Button ID="btnExportExcel0" runat="server" OnClick="btnExportExcel_Click" Text="Export Excel" Font-Bold="True" Font-Names="Calibri" BorderColor="#E46CA8" style="color: #FFFFFF; background-color: #EE9FC7"/>
+                <asp:Button ID="btnExportWord0" runat="server" OnClick="btnExportWord_Click" Text="Export Word" Font-Bold="True" Font-Names="Calibri" BorderColor="#E46CA8" style="color: #FFFFFF; background-color: #EE9FC7"/>
+                <asp:Button ID="btnExportPDF0" runat="server" OnClick="btnExportPDF_Click" Text="Export PDF" Font-Bold="True" Font-Names="Calibri" BorderColor="#E46CA8" style="color: #FFFFFF; background-color: #EE9FC7"/>
             </td>
         </tr>
         <tr>

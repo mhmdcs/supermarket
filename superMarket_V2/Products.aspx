@@ -15,7 +15,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td style="width: 116px"><strong>Filter Products</strong></td>
+                <td style="width: 116px; color: #5A1035;"><strong>Filter Products</strong></td>
                 <td>
                 <asp:DropDownList ID="ddlProductCatagory" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProductId_SelectedIndexChanged">
                 </asp:DropDownList>

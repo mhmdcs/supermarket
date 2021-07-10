@@ -12,11 +12,11 @@
             <table class="nav-justified">
                 <tr>
                     <td style="width: 19px">&nbsp;</td>
-                    <td class="text-center" style="font-size: xx-large; color: #7B6F57">Supermarket</td>
+                    <td class="text-center" style="font-size: xx-large; color: #5A1035">Supermarket</td>
                 </tr>
                 <tr>
                     <td style="width: 19px">&nbsp;</td>
-                    <td style="font-size: medium; color: #7B6F57;" class="text-center">Supermarket is a service that aims to facilitate the ordering of products over the Internet. You can order the product you want now!</td>
+                    <td style="font-size: medium; color: #5A1035;" class="text-center">Supermarket is a service that aims to facilitate the ordering of products over the Internet. You can order the product you want now!</td>
                 </tr>
             </table>
                  </h1>
