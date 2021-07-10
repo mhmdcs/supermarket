@@ -15,18 +15,18 @@
             </tr>
         </table>
 
-    <div id="productsMenu" style="text-align: center">
-                    <asp:ListView ID="productsLV" runat="server" >
+
+                    <asp:ListView ID="productsLV" runat="server">
                 <ItemTemplate>
-                    <table style="display: inline-block;">
+                    <table  style="display: inline-block;">
                         <tr>
                             <td>
-                                <asp:Image style ="margin-top: 40px" ID="Image2" runat="server" Height="200px" Width="250px"
+                                <asp:Image ID="Image2" runat="server" Height="200px" Width="250px"
                                  ImageUrl='<%#"data:Image/jpg;base64," + Convert.ToBase64String((byte[])Eval("productCategoriesImage")) %>' />
-                                 <p style = "font-size: large; font-style: normal; margin: 20px">Catalog: <%#Eval("product") %></p>
+                                 <p>Catalog: <%#Eval("product") %></p>
                                     <p>Product Name: <%#Eval("productCategories") %></p>
                                     <p>Size: <%#Eval("size") %></p>
-                                    <p>Expiration Date: <%#Eval("expiryDate", "{0:MMM d, yyyy}") %></p>
+                                    <p>Expiration Date: <%#Eval("expiryDate") %></p>
                                     <p>Price: <%#Eval("price") %></p>
 
                                     </td>
@@ -34,6 +34,5 @@
                             </table>
                         </ItemTemplate>
                     </asp:ListView>
-                    </div>
 
 </asp:Content>

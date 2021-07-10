@@ -120,6 +120,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="demo\demoListView.aspx" />
     <Content Include="demo\demoPage.aspx" />
     <Content Include="demo\demoPage2.aspx" />
     <Content Include="favicon.ico" />
@@ -246,6 +247,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demo\demoListView.aspx.cs">
+      <DependentUpon>demoListView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demo\demoListView.aspx.designer.cs">
+      <DependentUpon>demoListView.aspx</DependentUpon>
     </Compile>
     <Compile Include="demo\demoPage.aspx.cs">
       <DependentUpon>demoPage.aspx</DependentUpon>
