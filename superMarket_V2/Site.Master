@@ -89,7 +89,7 @@
                             </AnonymousTemplate>
                             <LoggedInTemplate>
 
-                        <span style="color: #ffe1f2;">
+                        <span style="color: #FFFFFF;">
                             Welcome <span class="bold">
                                     <asp:LoginName ID="HeadLoginName" runat="server" />
                                 </span>! </span>

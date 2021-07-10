@@ -19,7 +19,7 @@ namespace superMarket_V2
                 adminLink.Visible = true;
             }
 
-            if (HttpContext.Current.User.IsInRole("user"))
+            if (HttpContext.Current.User.IsInRole("hasProfile"))
             {
                 orderLink.Visible = true;
             }
