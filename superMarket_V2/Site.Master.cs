@@ -28,17 +28,7 @@ namespace superMarket_V2
             {
                 orderLink.Visible = true;
             }
-
-            if (HttpContext.Current.User.IsInRole("admin"))
-            {
-                profileLink.Visible = true;
-            }
-
-            if (HttpContext.Current.User.IsInRole("user"))
-            {
-                profileLink.Visible = true;
-            }
-
+            
             if (HttpContext.Current.User.IsInRole("admin"))
             {
                 signupLink.Visible = false;

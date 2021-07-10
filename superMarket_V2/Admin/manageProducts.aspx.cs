@@ -14,7 +14,7 @@ namespace superMarket_V2.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            populateProductsGV();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -58,7 +58,7 @@ namespace superMarket_V2.Admin
         {
 
             CRUD myCrud = new CRUD();
-            string mySql = @"SELECT productCategories.productCategoriesImage, product.product, productCategories.productCategories, size.size, productCategories.expiryDate, productCategories.price
+            string mySql = @"SELECT product.product, productCategories.productCategories, size.size, productCategories.expiryDate, productCategories.price
                             FROM   product INNER JOIN
                             productCategories ON product.productId = productCategories.productId INNER JOIN
                             size ON productCategories.sizeId = size.sizeId";

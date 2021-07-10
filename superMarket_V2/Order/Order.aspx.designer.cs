@@ -13,13 +13,13 @@ namespace superMarket_V2.Order {
     public partial class Order {
         
         /// <summary>
-        /// txtCustomerProductOrderId control.
+        /// lblOutput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCustomerProductOrderId;
+        protected global::System.Web.UI.WebControls.Label lblOutput;
         
         /// <summary>
         /// ddlProductId control.
@@ -58,6 +58,15 @@ namespace superMarket_V2.Order {
         protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
+        /// txtCustomerProductOrderId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCustomerProductOrderId;
+        
+        /// <summary>
         /// Button2 control.
         /// </summary>
         /// <remarks>
@@ -85,13 +94,13 @@ namespace superMarket_V2.Order {
         protected global::System.Web.UI.WebControls.Button Button5;
         
         /// <summary>
-        /// GridView1 control.
+        /// gvOrder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView gvOrder;
         
         /// <summary>
         /// Button4 control.

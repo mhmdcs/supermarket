@@ -6,15 +6,19 @@
         PRODCUTS ORDER PAGE</p>
     <table class="nav-justified">
         <tr>
-            <td style="width: 465px; height: 22px">PRODUCT ID</td>
-            <td style="height: 22px">
-                <asp:TextBox ID="txtCustomerProductOrderId" runat="server"></asp:TextBox>
+            <td style="height: 22px" colspan="2">
+                <asp:Label ID="lblOutput" runat="server"></asp:Label>
             </td>
+        </tr>
+        <tr>
+            <td style="width: 465px; height: 22px">&nbsp;</td>
+            <td style="height: 22px">
+                &nbsp;</td>
         </tr>
         <tr>
             <td style="width: 465px; height: 22px">PRODUCT TYPE</td>
             <td style="height: 22px">
-                <asp:DropDownList ID="ddlProductId" runat="server">
+                <asp:DropDownList ID="ddlProductId" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProductId_SelectedIndexChanged">
                 </asp:DropDownList>
             </td>
         </tr>
@@ -36,16 +40,33 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
+            <td style="width: 465px">&nbsp;</td>
+            <td>
+                <asp:Button ID="Button1" runat="server" Text="Order" Width="310px" OnClick="Button1_Click" />
+            </td>
+        </tr>
+        <tr>
             <td colspan="2" style="height: 26px">
-                <asp:Button ID="Button1" runat="server" Text="Order" Width="310px" />
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="height: 26px">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 465px">
+                PRODUCT ID</td>
+            <td>
+                <asp:TextBox ID="txtCustomerProductOrderId" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td style="width: 465px">
+                &nbsp;</td>
+            <td>
                 <asp:Button ID="Button2" runat="server" Text="Update Order" Width="147px" />
                 <asp:Button ID="Button3" runat="server" Text="Delete Order" Width="164px" />
             </td>
-            <td>&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 465px; height: 20px"></td>
@@ -54,13 +75,13 @@
         <tr>
             <td style="width: 465px; height: 20px">&nbsp;</td>
             <td style="height: 20px">
-                <asp:Button ID="Button5" runat="server" Text="My Orders" />
+                <asp:Button ID="Button5" runat="server" Text="My Orders" OnClick="Button5_Click" />
             </td>
         </tr>
         <tr>
             <td style="width: 465px">&nbsp;</td>
             <td>
-                <asp:GridView ID="GridView1" runat="server">
+                <asp:GridView ID="gvOrder" runat="server">
                 </asp:GridView>
             </td>
         </tr>
@@ -69,7 +90,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 465px">Click here to download receipt!</td>
+            <td style="width: 465px">Click here to download receipt as PDF</td>
             <td>
                 <asp:Button ID="Button4" runat="server" Text="Download Order Receipt" />
             </td>

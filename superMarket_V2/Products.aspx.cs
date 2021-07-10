@@ -32,38 +32,6 @@ namespace superMarket_V2
             ddlProductId.DataBind();
         }
 
-        //protected void populateProductCategoriesDDL()
-        //{
-        //    CRUD myCrud = new CRUD();
-        //    string mySql = @"select productCategoriesId, productCategories 
-        //                     from productCategories";
-        //    SqlDataReader dr = myCrud.getDrPassSql(mySql);
-        //    ddlProductCategoriesId.DataTextField = "productCategories";
-        //    ddlProductCategoriesId.DataValueField = "productCategoriesId";
-        //    ddlProductCategoriesId.DataSource = dr;
-        //    ddlProductCategoriesId.DataBind();
-
-            
-        //}
-
-        //protected void ddlProductId_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    CRUD myCrud = new CRUD();
-        //    string mySql = @"select productCategories.productCategoriesId, productCategories.productCategories from productCategories inner join product 
-        //                    on productCategories.productId = product.productId where product.productId=@productId";
-        //    Dictionary<string, object> myPara = new Dictionary<string, object>();
-        //    myPara.Add("@productId", ddlProductId.SelectedValue);
-        //    SqlDataReader dr = myCrud.getDrPassSql(mySql, myPara);
-        //    ddlProductCategoriesId.DataTextField = "productCategories";
-        //    ddlProductCategoriesId.DataValueField = "productCategoriesId";
-        //    ddlProductCategoriesId.DataSource = dr;
-        //    ddlProductCategoriesId.DataBind();
-
-        //    populateproductsLV();
-        //}
-
-
-
 
         protected void ddlProductId_SelectedIndexChanged(object sender, EventArgs e)
         {

@@ -22,15 +22,6 @@ namespace superMarket_V2 {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor orderLink;
         
         /// <summary>
-        /// profileLink control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor profileLink;
-        
-        /// <summary>
         /// loginLink control.
         /// </summary>
         /// <remarks>
