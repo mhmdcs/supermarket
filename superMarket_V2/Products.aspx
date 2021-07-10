@@ -23,7 +23,7 @@
                             <td>
                                 <asp:Image style ="margin-top: 40px" ID="Image2" runat="server" Height="200px" Width="250px"
                                  ImageUrl='<%#"data:Image/jpg;base64," + Convert.ToBase64String((byte[])Eval("productCategoriesImage")) %>' />
-                                 <p style = "font-size: large; font-style: normal; margin: 20px">Catalog: <%#Eval("product") %></p>
+                                 <p style = "font-size: large; font-style: normal; margin: 40px; font-weight:bold ">Catalog: <%#Eval("product") %></p>
                                     <p>Product Name: <%#Eval("productCategories") %></p>
                                     <p>Size: <%#Eval("size") %></p>
                                     <p>Expiration Date: <%#Eval("expiryDate", "{0:MMM d, yyyy}") %></p>
