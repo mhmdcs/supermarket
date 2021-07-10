@@ -17,7 +17,7 @@ namespace superMarket_V2
             if (!IsPostBack)
             {
                 populateProductDDL();
-               // populateproductsLV();
+                populateproductsLV();
             }
         }
 
@@ -45,6 +45,7 @@ namespace superMarket_V2
             DataTable dt = myCrud.getDTPassSqlDic(mySql, myPara);
             lvProducts.DataSource = dt;
             lvProducts.DataBind();
+            
         }
 
         protected void populateproductsLV()
@@ -53,13 +54,14 @@ namespace superMarket_V2
             string mySql = @"SELECT productCategories.productCategoriesImage, product.product, productCategories.productCategories, size.size, productCategories.expiryDate, productCategories.price
                             FROM   product INNER JOIN
                             productCategories ON product.productId = productCategories.productId INNER JOIN
-                            size ON productCategories.sizeId = size.sizeId";
+                            size ON productCategories.sizeId = size.sizeId
+                            where product.productId=@productId";
 
             Dictionary<string, object> myPara = new Dictionary<string, object>();
             myPara.Add("@productId", ddlProductCatagory.SelectedValue);
             DataTable dt = myCrud.getDTPassSqlDic(mySql, myPara);
-            productsLV.DataSource = dt;
-            productsLV.DataBind();
+            lvProducts.DataSource = dt;
+            lvProducts.DataBind();
         }
 
 

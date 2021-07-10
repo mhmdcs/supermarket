@@ -34,14 +34,6 @@
                 <strong>Product Type</strong></td>
             <td style="height: 23px">
                 <asp:DropDownList ID="ddlProducTypetId" runat="server">
-                    <asp:ListItem Value="1">Dairy</asp:ListItem>
-                    <asp:ListItem Value="2">Beauty &amp; Personal Care</asp:ListItem>
-                    <asp:ListItem Value="3">Fresh Vegetables</asp:ListItem>
-                    <asp:ListItem Value="4">Fresh Fruits</asp:ListItem>
-                    <asp:ListItem Value="5">Meat &amp; Chicken</asp:ListItem>
-                    <asp:ListItem Value="6">Cleaning &amp; Washing</asp:ListItem>
-                    <asp:ListItem Value="7">Bakery</asp:ListItem>
-                    <asp:ListItem Value="8">Frozen Food</asp:ListItem>
                 </asp:DropDownList>
             </td>
         </tr>

@@ -47,8 +47,11 @@ namespace superMarket_V2.Order
         {
             CRUD myCrud = new CRUD();
             string mySql = @"select productCategoriesId, productCategories 
-                                 from productCategories";
-            SqlDataReader dr = myCrud.getDrPassSql(mySql);
+                                 from productCategories
+                             where productId=@productId";
+            Dictionary<string, object> myPara = new Dictionary<string, object>();
+            myPara.Add("@productId", ddlProductId.SelectedValue);
+            SqlDataReader dr = myCrud.getDrPassSql(mySql, myPara);
             ddlProductCategoriesId.DataTextField = "productCategories";
             ddlProductCategoriesId.DataValueField = "productCategoriesId";
             ddlProductCategoriesId.DataSource = dr;
@@ -213,6 +216,5 @@ namespace superMarket_V2.Order
             gvOrder.AllowPaging = true;
             gvOrder.DataBind();
         }
-
     }
 }

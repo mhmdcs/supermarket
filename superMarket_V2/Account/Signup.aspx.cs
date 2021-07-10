@@ -56,7 +56,7 @@ namespace superMarket_V2.Account
             string myHostsmtpAddress = "smtp.gmail.com";//"smtp.mail.yahoo.com";  //mail.wdbcs.com 
             int myPortNumber = 587;
             bool myEnableSSL = true;
-            string myUserName = "trashmalllow@gmail.com";//"trashmalllow@gmail.comm"
+            string myUserName = "trashmalllow@gmail.com";//"trashmalllow@gmail.com"
             string myPassword = "ilikeD0NUTS";//"ilikeD0NUTS"
             
 
