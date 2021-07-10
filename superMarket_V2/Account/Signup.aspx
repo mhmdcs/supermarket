@@ -2,17 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <br />  
-  
-     <div id="TitleContent" style="text-align: center">
-            <a runat="server" href="~/">
-                <asp:Image  ID="Image2" runat="server" ImageUrl="~/Images/supermarketlogo.png" alt="logo" BorderStyle="None" Height="300px" Width="900px" />
-            </a>
-                         <br />
-            <br />  
-                         <br />
-        </div>
+
     <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
-             <CreateUserButtonStyle  Font-Bold="True" Font-Names="Calibri" />
+             <CreateUserButtonStyle  Font-Bold="True" Font-Names="Calibri" BackColor="#D8B865" BorderColor="#B9932F" ForeColor="White" />
             <WizardSteps>
                 <asp:CreateUserWizardStep runat="server" >
                     <ContentTemplate>
@@ -123,7 +115,7 @@
                                 <br />
                                 </tr>
                                 <tr>
-                                    <td style="height: 20px"><strong>Please confirm and authorize your registration by pressing the <span style="color: #77395A">Confirm</span> button.</strong></td>
+                                    <td style="height: 20px"><strong>Click on Continue to insert your profile information.</strong></td>
                                 </tr>
                                 <tr>
                                     <td>&nbsp;</td>
@@ -131,7 +123,7 @@
                                 <tr>
                                 <td align="right">
 
-                                        <asp:Button ID="ContinueButton" runat="server" CausesValidation="False" CommandName="Continue" OnCommand="ContinueButton_Command"  Text="CONFIRM" ValidationGroup="CreateUserWizard"  Font-Bold="True" Font-Names="Calibri" />
+                                        <asp:Button ID="ContinueButton" runat="server" CausesValidation="False" CommandName="Continue" OnCommand="ContinueButton_Command"  Text="Continue" ValidationGroup="CreateUserWizard"  Font-Bold="True" Font-Names="Calibri" BackColor="#D8B865" BorderColor="#B9932F" ForeColor="White" />
 
 
                                     </td>

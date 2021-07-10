@@ -17,7 +17,7 @@ namespace superMarket_V2
             if (!IsPostBack)
             {
                 populateProductDDL();
-                populateproductsLV();
+               // populateproductsLV();
             }
         }
 

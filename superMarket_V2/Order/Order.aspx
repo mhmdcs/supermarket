@@ -3,7 +3,7 @@
 
         <p>
         <br />
-        PRODCUTS ORDER PAGE</p>
+        </p>
     <table class="nav-justified">
         <tr>
             <td style="height: 22px" colspan="2">
@@ -16,21 +16,21 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 465px; height: 22px">PRODUCT TYPE</td>
+            <td style="width: 465px; height: 22px"><strong>Prouct </strong><b>C</b><span style="font-weight: bold">atagory</span></td>
             <td style="height: 22px">
                 <asp:DropDownList ID="ddlProductId" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProductId_SelectedIndexChanged">
                 </asp:DropDownList>
             </td>
         </tr>
         <tr>
-            <td style="width: 465px">PRODUCT NAME</td>
+            <td style="width: 465px"><strong>Prouct Name</strong></td>
             <td>
                 <asp:DropDownList ID="ddlProductCategoriesId" runat="server">
                 </asp:DropDownList>
             </td>
         </tr>
         <tr>
-            <td style="width: 465px">PRODUCT QUANTITY</td>
+            <td style="width: 465px"><strong>Quantity</strong></td>
             <td>
                 <asp:TextBox ID="txtcustomerProductOrderQuantity" runat="server"></asp:TextBox>
             </td>
@@ -42,7 +42,7 @@
         <tr>
             <td style="width: 465px">&nbsp;</td>
             <td>
-                <asp:Button ID="Button1" runat="server" Text="Order" Width="310px" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" runat="server" Text="Order" OnClick="Button1_Click" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865"/>
             </td>
         </tr>
         <tr>
@@ -55,7 +55,7 @@
         </tr>
         <tr>
             <td style="width: 465px">
-                PRODUCT ID</td>
+                <strong>Product ID</strong></td>
             <td>
                 <asp:TextBox ID="txtCustomerProductOrderId" runat="server"></asp:TextBox>
             </td>
@@ -64,8 +64,8 @@
             <td style="width: 465px">
                 &nbsp;</td>
             <td>
-                <asp:Button ID="Button2" runat="server" Text="Update Order" Width="147px" />
-                <asp:Button ID="Button3" runat="server" Text="Delete Order" Width="164px" />
+                <asp:Button ID="Button2" runat="server" Text="Update Order" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865"/>
+                <asp:Button ID="Button3" runat="server" Text="Delete Order" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865"/>
             </td>
         </tr>
         <tr>
@@ -75,7 +75,7 @@
         <tr>
             <td style="width: 465px; height: 20px">&nbsp;</td>
             <td style="height: 20px">
-                <asp:Button ID="Button5" runat="server" Text="My Orders" OnClick="Button5_Click" />
+                <asp:Button ID="Button5" runat="server" Text="My Orders" OnClick="Button5_Click" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865"/>
             </td>
         </tr>
         <tr>
@@ -90,9 +90,9 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 465px">Click here to download receipt as PDF</td>
+            <td style="width: 465px">&nbsp;</td>
             <td>
-                <asp:Button ID="Button4" runat="server" Text="Download Order Receipt" />
+                <asp:Button ID="Button4" runat="server" Text="Download Order Receipt as PDF" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865"/>
             </td>
         </tr>
     </table>

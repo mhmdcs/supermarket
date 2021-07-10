@@ -1,11 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="superMarket_V2.Account.login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-                         <div id="TitleContent" style="text-align: center">
 
-                             <a runat="server" href="~/">
-                <asp:Image  ID="Image1" runat="server" ImageUrl="~/Images/supermarketlogo.png" alt="logo" BorderStyle="None" Height="300px" Width="900px" />
-            </a>
-        </div>
                          <p>
     <br />
       <div>
@@ -55,7 +50,7 @@
                     &nbsp;</td>
                 <td>
                     <asp:Button ID="btnLogin" runat="server" onclick="btnLogin_Click" 
-                        Text="LOGIN" Font-Bold="True" Font-Names="Calibri" />
+                        Text="LOGIN" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865" />
 <%--                    <asp:Button ID="btnCreateAdmin" runat="server" OnClick="btnCreateAdmin_Click" Text="Admin" Visible="False" />--%>
                 </td>
             </tr>

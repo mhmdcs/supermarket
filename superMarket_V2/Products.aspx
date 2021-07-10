@@ -5,7 +5,7 @@
     </p>
     <table class="nav-justified">
         <tr>
-            <td style="width: 174px">Filter Products</td>
+            <td style="width: 174px"><strong>Filter Products</strong></td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>

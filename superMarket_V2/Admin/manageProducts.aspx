@@ -25,7 +25,7 @@
         <tr>
             <td class="modal-sm" style="width: 216px">&nbsp;</td>
             <td>
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Add" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Add" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865" />
             </td>
         </tr>
         <tr>
