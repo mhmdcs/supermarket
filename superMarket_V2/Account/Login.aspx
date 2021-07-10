@@ -41,7 +41,7 @@
                 <td class="style2">
                     <strong>Password:</strong></td>
                 <td>
-                    <asp:TextBox ID="txtPassword" runat="server" ></asp:TextBox> 
+                    <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" ></asp:TextBox> 
                 </td>
             </tr>
             <tr>
@@ -69,7 +69,7 @@
         </table>
     
     </div>
-        <tr><td colspan="2">Don't have an account? <a runat="server" href="~/Account/Signup">Sign up here!</a>  </td></tr>
+        <tr><td colspan="2">If you're new you can <a runat="server" href="~/Account/Signup">sign up here!</a>  </td></tr>
     </p>
 <p>
 </p>

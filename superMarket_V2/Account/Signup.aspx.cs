@@ -25,7 +25,6 @@ namespace superMarket_V2.Account
 
 
 
-
                 //codes for sending recently registered user email notification after registration
                 // Get current logged-in user username
                 string uname = HttpContext.Current.User.Identity.Name.ToString();
@@ -34,7 +33,7 @@ namespace superMarket_V2.Account
                 string userId = user.ProviderUserKey.ToString();
                 //this will be used to get ther currently logged in user email address to send SMTP email relays to user email after every sucessful ticket operation
                 string userEmail = Membership.GetUser(uname).Email;
-                string emailSubject = "Thank you for signing up on superMarket!";
+                string emailSubject = "Thank you for signing up on SuperMarket!";
                 string emailBody = "Your account has been registered and authenticated. Thank you for signing up!";
                 sendEmailViaGmail(userEmail, emailSubject, emailBody);
             }

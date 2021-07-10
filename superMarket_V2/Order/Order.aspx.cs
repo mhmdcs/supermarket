@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace superMarket_V2.Admin
+namespace superMarket_V2.Order
 {
-    public partial class productManagement : System.Web.UI.Page
+    public partial class Order : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

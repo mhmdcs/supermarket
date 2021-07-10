@@ -7,27 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace superMarket_V2.Admin {
+namespace superMarket_V2 {
     
     
-    public partial class productManagement {
+    public partial class Products {
         
         /// <summary>
-        /// lblOutput control.
+        /// ddlProductId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblOutput;
+        protected global::System.Web.UI.WebControls.DropDownList ddlProductId;
         
         /// <summary>
-        /// txtbrand control.
+        /// productsLV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbrand;
+        protected global::System.Web.UI.WebControls.ListView productsLV;
     }
 }
