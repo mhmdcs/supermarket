@@ -13,21 +13,21 @@ namespace superMarket_V2 {
     public partial class Products {
         
         /// <summary>
-        /// ddlProductId control.
+        /// ddlProductCatagory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlProductId;
+        protected global::System.Web.UI.WebControls.DropDownList ddlProductCatagory;
         
         /// <summary>
-        /// productsLV control.
+        /// lvProducts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView productsLV;
+        protected global::System.Web.UI.WebControls.ListView lvProducts;
     }
 }

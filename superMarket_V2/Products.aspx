@@ -9,14 +9,14 @@
             <tr>
                 <td style="width: 116px"><strong>Filter Products</strong></td>
                 <td>
-                <asp:DropDownList ID="ddlProductId" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProductId_SelectedIndexChanged">
+                <asp:DropDownList ID="ddlProductCatagory" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProductId_SelectedIndexChanged">
                 </asp:DropDownList>
                 </td>
             </tr>
         </table>
 
     <div id="productsMenu" style="text-align: center">
-                    <asp:ListView ID="productsLV" runat="server" >
+                    <asp:ListView ID="lvProducts" runat="server" >
                 <ItemTemplate>
                     <table style="display: inline-block;">
                         <tr>

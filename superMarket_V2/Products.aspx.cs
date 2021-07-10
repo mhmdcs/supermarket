@@ -26,10 +26,10 @@ namespace superMarket_V2
             CRUD myCrud = new CRUD();
             string mySql = @"select productId, product from product";
             SqlDataReader dr = myCrud.getDrPassSql(mySql);
-            ddlProductId.DataTextField = "product";
-            ddlProductId.DataValueField = "productId";
-            ddlProductId.DataSource = dr;
-            ddlProductId.DataBind();
+            ddlProductCatagory.DataTextField = "product";
+            ddlProductCatagory.DataValueField = "productId";
+            ddlProductCatagory.DataSource = dr;
+            ddlProductCatagory.DataBind();
         }
 
 
@@ -41,10 +41,10 @@ namespace superMarket_V2
                             productCategories ON product.productId = productCategories.productId INNER JOIN
                             size ON productCategories.sizeId = size.sizeId where product.productId=@productId";
             Dictionary<string, object> myPara = new Dictionary<string, object>();
-            myPara.Add("@productId", ddlProductId.SelectedValue);
+            myPara.Add("@productId", ddlProductCatagory.SelectedValue);
             DataTable dt = myCrud.getDTPassSqlDic(mySql, myPara);
-            productsLV.DataSource = dt;
-            productsLV.DataBind();
+            lvProducts.DataSource = dt;
+            lvProducts.DataBind();
         }
 
         protected void populateproductsLV()
@@ -56,7 +56,7 @@ namespace superMarket_V2
                             size ON productCategories.sizeId = size.sizeId";
 
             Dictionary<string, object> myPara = new Dictionary<string, object>();
-            myPara.Add("@productId", ddlProductId.SelectedValue);
+            myPara.Add("@productId", ddlProductCatagory.SelectedValue);
             DataTable dt = myCrud.getDTPassSqlDic(mySql, myPara);
             productsLV.DataSource = dt;
             productsLV.DataBind();
