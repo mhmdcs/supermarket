@@ -55,9 +55,6 @@ namespace superMarket_V2.Admin
         
         protected void btnAdd_Click(object sender, EventArgs e)
         {
-
-
-
             //set uploaded file to HttpPostedFile object
             HttpPostedFile postedFile = fileProductImage.PostedFile;
 
@@ -103,6 +100,7 @@ namespace superMarket_V2.Admin
                 lblOutput.Text = "Failed to Add Product";
             }
 
+            populateProductsGV();
         }
 
 
@@ -135,6 +133,7 @@ namespace superMarket_V2.Admin
             {
                 lblOutput.Text = "Failed to Delete Product";
             }
+            populateProductsGV();
         }
 
         protected void btnShowProducts_Click(object sender, EventArgs e)
