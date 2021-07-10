@@ -23,16 +23,31 @@
             </td>
         </tr>
         <tr>
+            <td style="width: 129px">&nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
             <td style="width: 129px"><strong>Phone Number</strong></td>
             <td>
                 <asp:TextBox ID="txtCustomerPhoneNumber" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
+            <td style="width: 129px">&nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
             <td style="width: 129px; height: 22px"><strong>Email</strong></td>
             <td style="height: 22px">
                 <asp:TextBox ID="txtCustomerEmail" runat="server"></asp:TextBox>
             </td>
+        </tr>
+        <tr>
+            <td style="width: 129px; height: 22px">&nbsp;</td>
+            <td style="height: 22px">
+                &nbsp;</td>
         </tr>
         <tr>
             <td style="width: 129px; height: 22px;"><strong>Location</strong></td>
@@ -42,10 +57,20 @@
             </td>
         </tr>
         <tr>
+            <td style="width: 129px; height: 22px;">&nbsp;</td>
+            <td style="height: 22px">
+                &nbsp;</td>
+        </tr>
+        <tr>
             <td style="width: 129px"><strong>Credit Card Number</strong></td>
             <td>
                 <asp:TextBox ID="txtCustomerCreditNumber" runat="server"></asp:TextBox>
             </td>
+        </tr>
+        <tr>
+            <td style="width: 129px">&nbsp;</td>
+            <td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td style="width: 129px"><strong>Expiration Date</strong></td>
@@ -54,10 +79,20 @@
             </td>
         </tr>
         <tr>
+            <td style="width: 129px">&nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
             <td style="width: 129px"><strong>CVC Code</strong></td>
             <td>
                 <asp:TextBox ID="txtCustomerCreditCVC" runat="server"></asp:TextBox>
             </td>
+        </tr>
+        <tr>
+            <td style="width: 129px">&nbsp;</td>
+            <td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td style="width: 129px">&nbsp;</td>
