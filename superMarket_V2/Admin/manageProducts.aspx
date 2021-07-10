@@ -154,6 +154,7 @@
                     <asp:BoundField DataField="expiryDate" HeaderText="Expiration Date" />
                     <asp:BoundField DataField="price" HeaderText="Price" />
                     </Columns>
+                    <HeaderStyle BackColor="#CC5490" ForeColor="White" />
                 </asp:GridView>
             </td>
         </tr>
