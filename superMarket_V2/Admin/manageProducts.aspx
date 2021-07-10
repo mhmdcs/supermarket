@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="manageProducts.aspx.cs" Inherits="superMarket_V2.Admin.productManagement" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+
+
     <p>
         <br />
     </p>
@@ -16,7 +19,7 @@
         </tr>
         <tr>
             <td class="modal-sm" style="width: 155px">
-                Product Name</td>
+                <strong>Product Name</strong></td>
             <td>
                 <asp:TextBox ID="txtProductCategories" runat="server"></asp:TextBox>
             </td>
@@ -28,7 +31,7 @@
         </tr>
         <tr>
             <td class="modal-sm" style="width: 155px; height: 23px;">
-                Product Type</td>
+                <strong>Product Type</strong></td>
             <td style="height: 23px">
                 <asp:DropDownList ID="ddlProducTypetId" runat="server">
                     <asp:ListItem Value="1">Dairy</asp:ListItem>
@@ -49,7 +52,7 @@
         </tr>
         <tr>
             <td class="modal-sm" style="width: 155px">
-                Product Price</td>
+                <strong>Product Price</strong></td>
             <td>
                 <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
             </td>
@@ -61,7 +64,7 @@
         </tr>
         <tr>
             <td class="modal-sm" style="width: 155px">
-                Product Size</td>
+                <strong>Product Size</strong></td>
             <td>
                 <asp:RadioButtonList ID="rbtlSize" runat="server">
                     <asp:ListItem Value="1">250ML</asp:ListItem>
@@ -81,9 +84,9 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="modal-sm" style="width: 155px">
-                Product Expiration Date</td>
-            <td>
+            <td class="modal-sm" style="width: 155px; height: 23px;">
+                <strong>Product Expiration Date</strong></td>
+            <td style="height: 23px">
                 <asp:TextBox ID="txtExpiryDate" runat="server">01/01/1990</asp:TextBox>
             </td>
         </tr>
@@ -93,7 +96,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="modal-sm" style="width: 155px">Upload Product Image</td>
+            <td class="modal-sm" style="width: 155px"><strong>Upload Product Image</strong></td>
             <td>
                 <asp:FileUpload ID="fileProductImage" runat="server" />
             </td>
@@ -127,9 +130,13 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="modal-sm" style="width: 155px">&nbsp;</td>
-            <td>
-                &nbsp;</td>
+            <td class="modal-sm" style="width: 155px; height: 27px;"></td>
+            <td style="height: 27px">
+                <asp:Button ID="btnShowProducts" runat="server" OnClick="btnShowProducts_Click" Text="Show Products" />
+                <asp:Button ID="btnExportExcel0" runat="server" OnClick="btnExportExcel_Click" Text="Export Excel" />
+                <asp:Button ID="btnExportWord0" runat="server" OnClick="btnExportWord_Click" Text="Export Word" />
+                <asp:Button ID="btnExportPDF0" runat="server" OnClick="btnExportPDF_Click" Text="Export PDF" />
+            </td>
         </tr>
         <tr>
             <td class="modal-sm" style="width: 155px">&nbsp;</td>
@@ -138,11 +145,24 @@
         <tr>
             <td class="modal-sm" style="width: 155px">&nbsp;</td>
             <td>
-                <asp:GridView ID="gvProducts" runat="server">
+                <asp:GridView ID="gvProducts" runat="server" AutoGenerateColumns="false">
+                 <Columns>
+                    <asp:BoundField DataField="productCategoriesId" HeaderText="Product ID" />
+                    <asp:BoundField DataField="productCategories" HeaderText="Product" />
+                    <asp:BoundField DataField="product" HeaderText="Type" />
+                    <asp:BoundField DataField="size" HeaderText="Size" />
+                    <asp:BoundField DataField="expiryDate" HeaderText="Expiration Date" />
+                    <asp:BoundField DataField="price" HeaderText="Price" />
+                    </Columns>
                 </asp:GridView>
             </td>
         </tr>
     </table>
     <p>
     </p>
+
+
+
+
+
 </asp:Content>

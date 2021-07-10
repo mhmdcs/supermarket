@@ -1,7 +1,11 @@
-﻿using superMarket_V2.App_Code;
+﻿using iTextSharp.text;
+using iTextSharp.text.html.simpleparser;
+using iTextSharp.text.pdf;
+using superMarket_V2.App_Code;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -19,6 +23,12 @@ namespace superMarket_V2.Order
                 populateProductDDL();
                 populateddlProductCategoriesDDL();
             }
+        }
+
+        //this method is needed before page_load to run the other export methods
+        public override void VerifyRenderingInServerForm(Control control)
+        {
+            //base.VerifyRenderingInServerForm(control);
         }
 
 
@@ -69,12 +79,15 @@ namespace superMarket_V2.Order
             string userId = user.ProviderUserKey.ToString();
 
             CRUD myCrud = new CRUD();
-            string mySql = @"SELECT CustomerProductOrder.customerProductOrderId, customer.customerName, location.location, productCategories.productCategories, size.size, CustomerProductOrder.customerProductOrderQuantity, productCategories.expiryDate, productCategories.price
+            string mySql = @"SELECT CustomerProductOrder.customerProductOrderId, customer.customerName, location.location, product.product, productCategories.productCategories, size.size, CustomerProductOrder.customerProductOrderQuantity, productCategories.expiryDate, productCategories.price
                             FROM   productCategories INNER JOIN
 			                CustomerProductOrder ON productCategories.productCategoriesId = CustomerProductOrder.productCategoriesId INNER JOIN
 			                size ON productCategories.sizeId = size.sizeId INNER JOIN
 			                customer ON CustomerProductOrder.UserId = customer.UserId INNER JOIN
-			                location ON customer.locationId = location.locationId";
+			                location ON customer.locationId = location.locationId INNER JOIN
+							product ON product.productId = CustomerProductOrder.productId
+                            where customer.UserId = @UserId
+                            ";
             Dictionary<string, object> myPara = new Dictionary<string, object>();
             myPara.Add("@UserId", userId);
             SqlDataReader dr = myCrud.getDrPassSql(mySql, myPara);
@@ -113,7 +126,7 @@ namespace superMarket_V2.Order
             if (pk >= 1)
             {
                 lblOutput.Text = "Successfully Ordered Product";
-                populateOrderGV();
+                
             }
             else
             {
@@ -123,9 +136,83 @@ namespace superMarket_V2.Order
 
         }
 
-        protected void Button5_Click(object sender, EventArgs e)
+        protected void btnReceipt_Click(object sender, EventArgs e)
         {
             populateOrderGV();
         }
+
+        
+        protected void btnUpdateOrder_Click(object sender, EventArgs e)
+        {
+            CRUD myCrud = new CRUD();
+            string mySql = @"UPDATE CustomerProductOrder
+                             SET productId = @productId
+                                  ,productCategoriesId = @productCategoriesId
+                                  ,customerProductOrderQuantity = @customerProductOrderQuantity
+                             where CustomerProductOrderId= @CustomerProductOrderId
+                              SELECT CAST(scope_identity() AS int)";
+            Dictionary<string, object> myPara = new Dictionary<string, object>();
+            myPara.Add("@productId", ddlProductId.SelectedValue);
+            myPara.Add("@productCategoriesId", ddlProductCategoriesId.SelectedValue);
+            myPara.Add("@customerProductOrderQuantity", txtcustomerProductOrderQuantity.Text);
+            myPara.Add("@CustomerProductOrderId", txtCustomerProductOrderId.Text);
+            int pk = myCrud.InsertUpdateDelete(mySql, myPara);
+
+            if (pk >= 1)
+            {
+                lblOutput.Text = "Successfully Updated Order";
+            }
+            else
+            {
+                lblOutput.Text = "Failed to Update Order";
+            }
+        }
+
+        protected void btnDeleteOrder_Click(object sender, EventArgs e)
+        {
+            CRUD myCrud = new CRUD();
+            string mySql = @"delete CustomerProductOrder where CustomerProductOrderId=@CustomerProductOrderId";
+            Dictionary<string, object> myPara = new Dictionary<string, object>();
+            myPara.Add("@CustomerProductOrderId", int.Parse(txtCustomerProductOrderId.Text));
+            int rtn = myCrud.InsertUpdateDelete(mySql, myPara);
+            if (rtn >= 1)
+            {
+                lblOutput.Text = "Succesfully Deleted Order";
+            }
+            else
+            {
+                lblOutput.Text = "Failed to Delete Order";
+            }
+        }
+
+
+        protected void btnExportPDF_Click(object sender, EventArgs e)
+        {
+            ExportGridToPDF();
+        }
+
+        //export to PDF
+        public void ExportGridToPDF()
+        {
+
+            Response.ContentType = "application/pdf";
+            Response.AddHeader("content-disposition", "attachment;filename=GridViewExport.pdf");
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            StringWriter sw = new StringWriter();
+            HtmlTextWriter hw = new HtmlTextWriter(sw);
+            gvOrder.RenderControl(hw);
+            StringReader sr = new StringReader(sw.ToString());
+            Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 10f, 0f);
+            iTextSharp.text.html.simpleparser.HTMLWorker htmlparser = new HTMLWorker(pdfDoc);
+            PdfWriter.GetInstance(pdfDoc, Response.OutputStream);
+            pdfDoc.Open();
+            htmlparser.Parse(sr);
+            pdfDoc.Close();
+            Response.Write(pdfDoc);
+            Response.End();
+            gvOrder.AllowPaging = true;
+            gvOrder.DataBind();
+        }
+
     }
 }

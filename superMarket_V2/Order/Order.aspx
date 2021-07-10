@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Order.aspx.cs" Inherits="superMarket_V2.Order.Order" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+
         <p>
         <br />
         </p>
@@ -65,7 +66,7 @@
         </tr>
         <tr>
             <td style="width: 117px">
-                <strong>Product ID</strong></td>
+                <strong>Product Order ID</strong></td>
             <td>
                 <asp:TextBox ID="txtCustomerProductOrderId" runat="server"></asp:TextBox>
             </td>
@@ -80,8 +81,8 @@
             <td style="width: 117px">
                 &nbsp;</td>
             <td>
-                <asp:Button ID="Button2" runat="server" Text="Update Order" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865"/>
-                <asp:Button ID="Button3" runat="server" Text="Delete Order" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865"/>
+                <asp:Button ID="btnUpdateOrder" runat="server" Text="Update Order" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865" OnClick="btnUpdateOrder_Click" />
+                <asp:Button ID="btnDeleteOrder" runat="server" Text="Delete Order" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865" OnClick="btnDeleteOrder_Click"/>
             </td>
         </tr>
         <tr>
@@ -91,8 +92,8 @@
         <tr>
             <td style="width: 117px; height: 20px">&nbsp;</td>
             <td style="height: 20px">
-                <asp:Button ID="btnReceipt" runat="server" Text="My Receipts" OnClick="Button5_Click" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865"/>
-                <asp:Button ID="btnExportPDF" runat="server" Text="Download Receipt as PDF" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865"/>
+                <asp:Button ID="btnReceipt" runat="server" Text="My Receipts" OnClick="btnReceipt_Click" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865"/>
+                <asp:Button ID="btnExportPDF" runat="server" Text="Download Receipt as PDF" Font-Bold="True" Font-Names="Calibri" BorderColor="#B9932F" style="color: #FFFFFF; background-color: #D8B865" OnClick="btnExportPDF_Click"/>
             </td>
         </tr>
         <tr>
@@ -103,7 +104,18 @@
         <tr>
             <td style="width: 117px">&nbsp;</td>
             <td>
-                <asp:GridView ID="gvOrder" runat="server">
+                <asp:GridView ID="gvOrder" runat="server" AutoGenerateColumns="false">
+                    <Columns>
+                    <asp:BoundField DataField="customerProductOrderId" HeaderText="Order ID" />
+                    <asp:BoundField DataField="customerName" HeaderText="Name" />
+                    <asp:BoundField DataField="location" HeaderText="Location" />
+                    <asp:BoundField DataField="product" HeaderText="Type" />
+                    <asp:BoundField DataField="productCategories" HeaderText="Product" />
+                    <asp:BoundField DataField="size" HeaderText="Size" />
+                    <asp:BoundField DataField="customerProductOrderQuantity" HeaderText="Quantity" />
+                    <asp:BoundField DataField="expiryDate" HeaderText="Expiration Date" />
+                    <asp:BoundField DataField="price" HeaderText="Price" />
+                    </Columns>
                 </asp:GridView>
             </td>
         </tr>
@@ -117,5 +129,8 @@
                 &nbsp;</td>
         </tr>
     </table>
+
+
+
 
 </asp:Content>

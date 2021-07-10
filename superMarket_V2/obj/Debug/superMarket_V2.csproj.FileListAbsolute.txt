@@ -140,3 +140,4 @@ C:\kingFahadIntern2021\misc\superMarket\superMarket\superMarket_V2\superMarket_V
 C:\kingFahadIntern2021\misc\superMarket\superMarket\superMarket_V2\superMarket_V2\obj\Debug\superMarket_V2.csproj.CopyComplete
 C:\kingFahadIntern2021\misc\superMarket\superMarket\superMarket_V2\superMarket_V2\obj\Debug\superMarket_V2.dll
 C:\kingFahadIntern2021\misc\superMarket\superMarket\superMarket_V2\superMarket_V2\obj\Debug\superMarket_V2.pdb
+C:\kingFahadIntern2021\misc\superMarket\superMarket\superMarket_V2\superMarket_V2\bin\itextsharp.dll

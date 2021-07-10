@@ -103,6 +103,42 @@ namespace superMarket_V2.Admin {
         protected global::System.Web.UI.WebControls.Button btnDelete;
         
         /// <summary>
+        /// btnShowProducts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnShowProducts;
+        
+        /// <summary>
+        /// btnExportExcel0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnExportExcel0;
+        
+        /// <summary>
+        /// btnExportWord0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnExportWord0;
+        
+        /// <summary>
+        /// btnExportPDF0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnExportPDF0;
+        
+        /// <summary>
         /// gvProducts control.
         /// </summary>
         /// <remarks>

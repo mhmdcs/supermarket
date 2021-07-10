@@ -1,6 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="superMarket_V2.Products" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+    <!--Ajax postback function ddlProductCatagory-->
+        <div>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+
+
+
+
             <table class="nav-justified">
             <tr>
                 <td style="width: 116px">&nbsp;</td>
@@ -35,5 +43,16 @@
                         </ItemTemplate>
                     </asp:ListView>
                     </div>
+
+
+
+
+                            </ContentTemplate>
+            <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="ddlProductCatagory" EventName="SelectedIndexChanged" />
+            </Triggers>
+        </asp:UpdatePanel>
+
+    </div>
 
 </asp:Content>

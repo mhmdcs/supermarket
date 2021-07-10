@@ -67,22 +67,22 @@ namespace superMarket_V2.Order {
         protected global::System.Web.UI.WebControls.TextBox txtCustomerProductOrderId;
         
         /// <summary>
-        /// Button2 control.
+        /// btnUpdateOrder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btnUpdateOrder;
         
         /// <summary>
-        /// Button3 control.
+        /// btnDeleteOrder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
+        protected global::System.Web.UI.WebControls.Button btnDeleteOrder;
         
         /// <summary>
         /// btnReceipt control.
