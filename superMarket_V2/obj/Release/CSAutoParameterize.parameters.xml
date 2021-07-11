@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="superMarketConStrxxx-Web.config Connection String" description="superMarketConStrxxx Connection String used in web.config by the application to access the database." defaultValue="Data Source=MOMEK\SQLEXP2017;Initial Catalog=superMarket;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\kingFahadIntern2021\\misc\\superMarket\\superMarket\\superMarket_V2\\superMarket_V2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='superMarketConStrxxx']/@connectionString" />
+  </parameter>
+  <parameter name="superMarketConStr-Web.config Connection String" description="superMarketConStr Connection String used in web.config by the application to access the database." defaultValue="Data Source=SQL5085.site4now.net;Initial Catalog=db_a75a38_supermarket;User Id=db_a75a38_supermarket_admin;Password=ilikeD0NUTS" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\kingFahadIntern2021\\misc\\superMarket\\superMarket\\superMarket_V2\\superMarket_V2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='superMarketConStr']/@connectionString" />
+  </parameter>
+</parameters>

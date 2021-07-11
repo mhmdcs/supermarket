@@ -144,6 +144,7 @@
     <Content Include="Profile\Web.config" />
     <Content Include="Order\Web.config" />
     <Content Include="Content\_variables.scss" />
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Order\Order.aspx" />
     <Content Include="Profile\Profile.aspx" />
