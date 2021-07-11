@@ -136,7 +136,7 @@ namespace superMarket_V2.Order
                 lblOutput.Text = "Failed to Order Product";
             }
 
-            populateOrderGV();
+            
         }
 
         protected void btnReceipt_Click(object sender, EventArgs e)
@@ -169,7 +169,7 @@ namespace superMarket_V2.Order
             {
                 lblOutput.Text = "Failed to Update Order";
             }
-            populateOrderGV();
+            
         }
 
         protected void btnDeleteOrder_Click(object sender, EventArgs e)
@@ -187,7 +187,7 @@ namespace superMarket_V2.Order
             {
                 lblOutput.Text = "Failed to Delete Order";
             }
-            populateOrderGV();
+            
         }
 
 

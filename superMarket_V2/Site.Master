@@ -75,6 +75,7 @@
 
                       <li><a runat="server" href="~/Products.aspx"  visible="true">All Products</a></li>
                         <li><a runat="server" id="orderLink" visible="false" href="~/Order/Order.aspx">Order</a></li>
+                        <li><a runat="server" id="profileLink" visible="false" href="~/Profile/Profile.aspx">Your Profile</a></li>
                         <li><a runat="server" id="loginLink" visible="true" href="~/Account/Login">Log in</a></li>
                         <li><a runat="server" id="signupLink" visible="true" href="~/Account/Signup">Sign up</a></li>
                        <li><a runat="server" href="~/About">About Me</a></li>

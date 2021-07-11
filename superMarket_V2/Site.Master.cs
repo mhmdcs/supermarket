@@ -48,7 +48,17 @@ namespace superMarket_V2
             {
                 loginLink.Visible = false;
             }
-            
+
+            if (HttpContext.Current.User.IsInRole("user"))
+            {
+                profileLink.Visible = true;
+            }
+
+            if (HttpContext.Current.User.IsInRole("hasProfile"))
+            {
+                profileLink.Visible = false;
+            }
+
 
         }
     }

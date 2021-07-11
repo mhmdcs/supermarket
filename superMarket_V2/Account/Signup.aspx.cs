@@ -43,6 +43,8 @@ namespace superMarket_V2.Account
         protected void ContinueButton_Command(object sender, CommandEventArgs e)
         {
             Response.Redirect("~/Profile/Profile.aspx");
+
+           // Response.Redirect("~/Default.aspx");
         }
 
         public string sendEmailViaGmail(string userEmail, string emailSubject, string emailBody) // worked 100%, this is a nice one use it with  properties
